@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1.既存のrailsプロジェクトをクローンします
+git clone https://github.com/ihatov08/rails7_docker_template.git
 
-Things you may want to cover:
+2.railsプロジェクトのディレクトリに移動します
 
-* Ruby version
+3.docker化に必要なDockerfileとcompose.ymlを作成します
+touch Dockerfile compose.yml
 
-* System dependencies
+4.Dockerfile,compose.yml,database.ymlファイルにdocker化に必要なコードを記述します
 
-* Configuration
+5.docker-compose up --buildで起動します。
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+6.指定したポート(今回は3000)にアクセスします
+ブラウザ上でlocalhost:3000にアクセス
